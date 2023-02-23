@@ -1,0 +1,36 @@
+{
+	"uploadOnSave": true,
+	"autoDelete": true,
+	"checkGitignore": false,
+	"activeTargets": [
+		"My FTP"
+	],
+	"concurrency": 5,
+	"ignore": [
+		".git/**/*",
+		".vscode/**/*"
+	],
+	"targets": [
+		{
+			"name": "My FTP",
+			"type": "ftp",
+			"host": "jkianipoor.mccdgm.net",
+			"port": 21,
+			"user": "jkianipoor",
+			"password": "407714Jk1516!",
+			"dir": "/public_html/prg-147",
+			"transferDataType": "binary"
+		},
+		{
+			"name": "My SFTP",
+			"type": "sftp",
+			"host": "jkianipoor.mccdgm.net",
+			"port": 22,
+			"user": "jkianipoor",
+			"password": "407714Jk1516!",
+			"dir": "/public_html/prg-147",
+			"privateKey": null,
+			"passphrase": null
+		}
+	]
+}
