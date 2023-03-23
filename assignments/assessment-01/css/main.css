@@ -1,0 +1,18 @@
+main {
+  display: flex;
+  gap: 3rem;
+}
+main img {
+  margin: 1rem;
+}
+main button {
+  margin: 0.5rem;
+}
+main .imgSection {
+  text-align: center;
+  border: 2px solid black;
+}
+main .paragraphSection {
+  text-align: center;
+  border: 2px solid blue;
+}/*# sourceMappingURL=main.css.map */

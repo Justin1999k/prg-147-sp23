@@ -1,0 +1,32 @@
+// Card styling.
+.card {
+  width: 30rem;
+  height: auto;
+  padding: 2rem;
+  border: 2px solid $border-color;
+  border-radius: 3rem;
+  box-shadow: 10px 15px 6px $primary-cardColor;
+  background-color: $primary-cardColor;
+  color: $secondary-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    margin-bottom: 1rem;
+  }
+
+  label {
+    margin-bottom: .5rem;
+  }
+
+  input {
+    padding: 2px;
+    width: 2.5rem;
+    margin-bottom: 1rem;
+  }
+}

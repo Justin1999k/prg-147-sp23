@@ -1,0 +1,49 @@
+// Imports
+@import "_reset.scss";
+@import "_variables.scss";
+@import "_formCard.scss";
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+
+main {
+  h1{
+    text-align: center;
+    margin: 2rem;
+    color: $secondary-color;
+  }
+  .formContainer {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    margin: 2rem;
+    font-size: 20px;
+  }
+
+  .receipt {
+    text-align: center;
+    color: $text-color;
+
+    p {
+      margin: 0.5rem;
+    }
+  }
+
+  // Tablet/Phone styling.
+  @media only screen and (max-width: $tablet-brkpt) {
+    .formContainer{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .card{
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  @media only screen and (max-width: $phone-brkpt) {
+    .card{
+      font-size: 14px;
+      width: 20rem;
+    }
+  }
+}

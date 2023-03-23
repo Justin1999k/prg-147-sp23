@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Links CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Links JS -->
+    <script src="js/scripts.js"></script>
+    <title>Form Basics, Math, Variables</title>
+  </head>
+  <body>
+    <main>
+      <h1>Justin's Restauaunt</h1>
+      <div class="formContainer">
+        <form class="card">
+          <h2>Entree</h2>
+          <h3>Select a quantity (between 0 and 10)</h3>
+          <label for="burger">Burger $3.99</label>
+          <input
+            type="number"
+            onkeydown="return false"
+            name="entreeOption"
+            id="burger"
+            value="0"
+            min="0"
+            max="10"
+          />
+          <label for="cheeseburger">Cheeseburger $4.99</label>
+          <input
+            type="number"
+            onkeydown="return false"
+            name="entreeOption"
+            id="cheeseburger"
+            value="0"
+            min="0"
+            max="10"
+          />
+          <label for="hotdog">Hotdog $3.99</label>
+          <input
+            type="number"
+            onkeydown="return false"
+            name="entreeOption"
+            id="hotdog"
+            value="0"
+            min="0"
+            max="10"
+          />
+          <label for="pizza">Pizza Slice $2.99</label>
+          <input
+            type="number"
+            onkeydown="return false"
+            name="entreeOption"
+            id="pizza"
+            value="0"
+            min="0"
+            max="10"
+          />
+          <label for="chikenStrips">Chicken Strips $4.99</label>
+          <input
+            type="number"
+            onkeydown="return false"
+            name="entreeOption"
+            id="chickenStrips"
+            value="0"
+            min="0"
+            max="10"
+          />
+        </form>
+        <form class="card">
+          <h2>Drink</h2>
+          <h3>Select a quantity (between 0 and 10)</h3>
+          <label for="water">Water $0.99</label>
+          <input
+            type="number"
+            onkeydown="return false"
+            name="drinkOption"
+            id="water"
+            value="0"
+            min="0"
+            max="10"
+          />
+          <label for="pepsi">Pepsi $1.99</label>
+          <input
+            type="number"
+            onkeydown="return false"
+            name="drinkOption"
+            id="pepsi"
+            value="0"
+            min="0"
+            max="10"
+          />
+          <label for="coke">Coke $1.99</label>
+          <input
+            type="number"
+            onkeydown="return false"
+            name="drinkOption"
+            id="coke"
+            value="0"
+            min="0"
+            max="10"
+          />
+          <label for="sprite">Sprite $1.99</label>
+          <input
+            type="number"
+            onkeydown="return false"
+            name="drinkOption"
+            id="sprite"
+            value="0"
+            min="0"
+            max="10"
+          />
+          <label for="juice">Juice $2.99</label>
+          <input
+            type="number"
+            onkeydown="return false"
+            name="drinkOption"
+            id="juice"
+            value="0"
+            min="0"
+            max="10"
+          />
+        </form>
+        <form class="card">
+          <h2>Desert</h2>
+          <h3>Select a quantity (between 0 and 10)</h3>
+          <label for="chocolateCake">Chocolate Cake $4.99</label>
+          <input
+            type="number"
+            onkeydown="return false"
+            name="desertOption"
+            id="chocolateCake"
+            value="0"
+            min="0"
+            max="10"
+          />
+          <label for="iceCreamSundae">Ice Cream Sundae $3.99</label>
+          <input
+            type="number"
+            onkeydown="return false"
+            name="desertOption"
+            id="iceCreamSundae"
+            value="0"
+            min="0"
+            max="10"
+          />
+          <label for="applePie">Apple Pie $5.99</label>
+          <input
+            type="number"
+            onkeydown="return false"
+            name="desertOption"
+            id="applePie"
+            value="0"
+            min="0"
+            max="10"
+          />
+          <label for="tiramisuCake">Tiramisu Cake $4.99</label>
+          <input
+            type="number"
+            onkeydown="return false"
+            name="desertOption"
+            id="tiramisuCake"
+            value="0"
+            min="0"
+            max="10"
+          />
+          <label for="cinnamonChurro">Cinnamon Churro $1.99</label>
+          <input
+            type="number"
+            onkeydown="return false"
+            name="desertOption"
+            id="cinnamonChurro"
+            value="0"
+            min="0"
+            max="10"
+          />
+        </form>
+      </div>
+      <div class="receipt">
+        <label for="nameTag">Name: </label>
+        <input type="text" id="nameTag" />
+        <button type="button" onclick="getTotal()">Submit Order</button>
+        <p class="quantAlert"></p>
+        <p id="entreeTotalDisplay"></p>
+        <p id="drinkTotalDisplay"></p>
+        <p id="desertTotalDisplay"></p>
+        <p id="totalCost">Total:</p>
+      </div>
+    </main>
+  </body>
+</html>

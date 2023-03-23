@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/scripts.js"></script>
+    <script>
+      function myFunction() {
+        document.getElementById("pTag").innerHTML =
+          "Changed from a function in the head section.";
+      }
+    </script>
+    <title>Assessment-01</title>
+  </head>
+  <body>
+    <main>
+      <div class="imgSection">
+        <img src="images/mercedesGTR.jpg" alt="Image of a car" id="imgCars" />
+        <button
+          type="button"
+          onclick="document.getElementById('imgCars').src='images/porcheGT.jpg'"
+        >
+          Porche
+        </button>
+        <button
+          type="button"
+          onclick="document.getElementById('imgCars').src='images/mercedesGTR.jpg'"
+        >
+          Mercedes
+        </button>
+        <button
+          type="button"
+          onclick="document.getElementById('imgCars').src='images/bmwM2.jpg'"
+        >
+          BMW
+        </button>
+        <button
+          onclick="document.getElementById('imgCars').style.display= 'block'"
+          ;
+        >
+          show
+        </button>
+        <button
+          onclick="document.getElementById('imgCars').style.display= 'none'"
+          ;
+        >
+          hide
+        </button>
+        <button
+          onclick="changeImgSize()"
+          ;
+        >
+          Change size
+        </button>
+      </div>
+      <div class="paragraphSection">
+        <p id="pTag">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis quod
+          dolorem nesciunt doloribus repudiandae, eaque voluptatibus repellendus
+          nihil distinctio veniam quo, cumque numquam neque. Sunt reprehenderit
+          unde aut quae dolor?
+        </p>
+        <button type="button" onclick="myFunction2()">
+          Change text from external JS page using JS
+        </button>
+        <button type="button" onclick="myFunction()">
+          Change text from head section using JS
+        </button>
+        <button type="button" onclick="changeTextColor()">
+          Change text color.
+        </button>
+      </div>
+    </main>
+  </body>
+</html>

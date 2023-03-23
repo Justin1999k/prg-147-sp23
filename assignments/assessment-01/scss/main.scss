@@ -1,0 +1,18 @@
+main{
+    display: flex;
+    gap: 3rem;
+    img{
+        margin: 1rem
+    }
+    button{
+        margin: .5rem
+    }
+    .imgSection {
+        text-align: center;
+        border: 2px solid black;
+    }
+    .paragraphSection {
+        text-align: center;
+        border: 2px solid blue;
+    }
+}
