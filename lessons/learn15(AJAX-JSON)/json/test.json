@@ -1,0 +1,26 @@
+[
+  {
+    "firstName": "Justin",
+    "age": 24,
+    "isAdult": true,
+    "siblings": ["Jaden", "Maya", "Navi"]
+  },
+  {
+    "firstName": "Maya",
+    "age": 16,
+    "isAdult": false,
+    "siblings": ["Navi", "Jaden", "Justin"]
+  },
+  {
+    "firstName": "Jaden",
+    "age": 13,
+    "isAdult": false,
+    "siblings": ["Navi", "Maya", "Justin"]
+  },
+  {
+    "firstName": "Navi",
+    "age": 12,
+    "isAdult": false,
+    "siblings": ["Jaden", "Maya", "Justin"]
+  }
+]
