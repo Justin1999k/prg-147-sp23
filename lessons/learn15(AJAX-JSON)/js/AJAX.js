@@ -14,12 +14,13 @@ function showCountries() {
         countryCard.innerHTML = country.name.common;
         console.log(countryCard);
       });
-    }
-  };
-
+    };
+  }
   xhr.send();
 }
 
+// XML not commonly used anymore, just good to know for older websites.
+// JSON is much easier to work with.
 // Example of the "Fetch API" being used. This is more modern, clean, 
 // and commonly used in todays code environment.
 // Fetch is promise based so we can use ".catch" and ".then", async/await.
@@ -34,7 +35,7 @@ function showCountries() {
 fetch("https://restcountries.com/v3.1/all")
 .then(res => {
     if (res.ok) {
-        console.log("SUCCESS");
+        document.getElementById("feed").innerHTML = "SUCCESS";
     } else {
         console.log("Not Successful");
     }

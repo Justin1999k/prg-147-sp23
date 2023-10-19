@@ -43,3 +43,41 @@ function loadMe(dog, dogNum) {
   document.getElementById("p" + dogNum).innerHTML = dog.caption;
   document.getElementById("img" + dogNum).setAttribute = ("alt", dog.altTag);
 }
+
+// Factory functions
+const myCoolProto = {
+  talk() {
+    return `Hello, I am ${this.name}`;
+  },
+}; // Object prototype example. Can be called to make new myCoolProto objects.
+
+function createPerson(name) {
+  return Object.create(myCoolProto, {
+    name: {
+      value: name,
+    },
+  }); // Creates a new person using prototype.
+}
+
+const me = createPerson("Justin");
+
+console.log(me.name);
+console.log(me.talk());
+
+//Constructors
+function Person(name) {
+  this.name = name;
+}
+
+Person.prototype.talk = function() {
+  return `Hello, I am ${this.name}`;
+}
+
+const justin = new Person('Justin');
+
+console.log(justin.name);
+console.log(justin.talk());
+
+/* Note that constructors provide proper inheritance traits and characteristics. 
+Factory objects do not. */
+
